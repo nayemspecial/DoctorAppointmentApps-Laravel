@@ -13,7 +13,7 @@ class AppointmentController extends Controller
         $appointments = Appointment::all();
 
         // Return the appointments as a response
-        return response()->json($appointments);
+        return view('appointments.index', ['appointments' => $appointments]);
     }
 
     public function show($id)

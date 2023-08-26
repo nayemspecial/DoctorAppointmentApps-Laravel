@@ -26,7 +26,7 @@
 	  <ul class="pl-4">
         <li><a href="#" class="block py-2 px-4 rounded transition duration-200 hover:bg-gray-700">Doctor</a>
           <ul class="pl-4">
-            <li><a href="#" class="block py-2 px-4 rounded transition duration-200 hover:bg-gray-700">Appointments</a></li>
+            <li><a href="{{url('/appointments')}}" class="block py-2 px-4 rounded transition duration-200 hover:bg-gray-700">Appointments</a></li>
             <li><a href="#" class="block py-2 px-4 rounded transition duration-200 hover:bg-gray-700">Schedule</a></li>
           </ul>
         </li>
