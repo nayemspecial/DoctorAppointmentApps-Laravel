@@ -7,12 +7,11 @@
     <table id="appointmentsTable" class="w-full mt-6">
       <thead class="bg-gray-800 text-white">
         <tr>
-          <th class="py-2 px-4">ID</th>
-          <th class="py-2 px-4">Doctor Schedule ID</th>
-          <th class="py-2 px-4">User ID</th>
-          <th class="py-2 px-4">Date</th>
-          <th class="py-2 px-4">Time</th>
-          <th class="py-2 px-4">Actions</th>
+          <th class="py-2 px-4 text-left">ID</th>
+          <th class="py-2 px-4 text-left">Schedule ID</th>
+          <th class="py-2 px-4 text-left">User ID</th>
+          <th class="py-2 px-4 text-left">Date & Time</th>
+          <th class="py-2 px-4 text-left">Actions</th>
         </tr>
       </thead>
       <tbody class="bg-gray-50">
@@ -20,10 +19,9 @@
         @foreach ($appointments as $appointment)
           <tr>
             <td class="py-2 px-4">{{ $appointment->id }}</td>
-            <td class="py-2 px-4">{{ $appointment->doctor_schedule_id }}</td>
+            <td class="py-2 px-4">{{ $appointment->schedule_id }}</td>
             <td class="py-2 px-4">{{ $appointment->user_id }}</td>
-            <td class="py-2 px-4">{{ $appointment->date }}</td>
-            <td class="py-2 px-4">{{ $appointment->time }}</td>
+            <td class="py-2 px-4">{{ $appointment->created_at }}</td>
             <td class="py-2 px-4">
               <!-- View button -->
               <a href="{{ route('appointments.show', $appointment->id) }}" class="text-blue-500 hover:text-blue-700 mr-2">View</a>
