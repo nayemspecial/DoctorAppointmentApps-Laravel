@@ -5,7 +5,7 @@
     <h1 class="text-2xl font-bold mb-4">Patients Management</h1>
 
     <div>
-        <!-- Create a New User button -->
+        <!-- Create a New User button in here -->
         <a href="{{ url('/users/create') }}" class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded">Create a New User</a>
 
         <!-- Search by Filter button
